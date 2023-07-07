@@ -141,5 +141,5 @@ http://localhost:8080/
 
 
 
-![Screenshot of an output.]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/chaudharybharat/socket.ioNode/blob/main/output.png)https://github.com/chaudharybharat/socket.ioNode/blob/main/output.png)
+![Screenshot of an output.](https://github.com/chaudharybharat/socket.ioNode/blob/main/output.png)https://github.com/chaudharybharat/socket.ioNode/blob/main/output.png)
 
