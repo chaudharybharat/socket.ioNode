@@ -14,12 +14,13 @@ You should get an output similar to −
 v14.17.0
 
 ```
- - Open your terminal and enter the following in your terminal to create a new folder and enter the following commands − 
-
+ - Open your terminal and enter the following in your terminal to create a new folder and enter the following commands −
+   
+```
  mkdir socket-project
  cd socket-proect
  npm init -y //this commond create defualt package json file  
-
+```
 - One final thing is that we should keep restarting the server. When we make changes, we will need a tool called nodemon. To install nodemon, open your terminal and enter the following command
 
 ```
