@@ -9,13 +9,13 @@ You should get an output similar to −
 v14.17.0
 
 ```
- - Open your terminal and enter the following in your terminal to create a new folder and enter the following commands − **
+ - Open your terminal and enter the following in your terminal to create a new folder and enter the following commands − 
 
  mkdir socket-project
  cd socket-proect
  npm init -y //this commond create defualt package json file  
 
-	**One final thing is that we should keep restarting the server. When we make changes, we will need a tool called nodemon. To install nodemon, open your terminal and enter the following command**
+- One final thing is that we should keep restarting the server. When we make changes, we will need a tool called nodemon. To install nodemon, open your terminal and enter the following command
 
 ```
 npm i express nodemon socket.io
@@ -34,7 +34,7 @@ change
   },
 
 ```
--- create main js file and write below code 
+-- create main js file and write below code(this file is server side) 
 
 ```
 const express=require('express');
@@ -75,6 +75,52 @@ socket.emit("server1","Receive From Server second")
 http.listen(port,()=>{
     console.log('app listeing on port ${port}');
 })
+
+```
+
+-- create index html file and write below code(this file is user side) 
+create src folder and create there index.html file
+if you useing visual studio code creat html file and -! enter to auto generate html code
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket IO</title>
+</head>
+<body>
+    <h1>Get response from the server</h1>
+   <button type=""submit" id="submit">Send Message</button>
+    <script src="socket.io/socket.io.js"></script>
+    <script>
+
+        
+        const socket=io();
+
+        socket.on("connect",()=>{
+            console.log(socket.id)
+        })
+        let submit=document.getElementById("submit");
+        submit.addEventListener("click",()=>{
+           socket.emit("message","hey from client"); 
+        });
+
+        socket.on("server",(msg)=>{
+           console.log(msg);
+        })
+
+        //if you want any event listen
+
+        const listener=(eventName,...args)=>{
+            console.log(eventName,args);
+        }
+        socket.onAny(listener);
+    </script>
+</body>
+</html>
+
 
 ```
 
