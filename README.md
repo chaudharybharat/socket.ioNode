@@ -15,8 +15,20 @@ v14.17.0
  cd socket-proect
  npm init -y //this commond create defualt package json file  
 
-** One final thing is that we should keep restarting the server. When we make changes, we will need a tool called nodemon. To install nodemon, open your terminal and enter the following command − **
+	**One final thing is that we should keep restarting the server. When we make changes, we will need a tool called nodemon. To install nodemon, open your terminal and enter the following command**
+```
 npm i express nodemon socket.io
+
+```
+below change for pacakge json file
+```
+- ![#f03c15]
+"scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+ `#f03c15`
+
+```
 
 
 
