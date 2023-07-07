@@ -1,3 +1,8 @@
+# This example is ioSocket server and user side
+below trigger event
+-User connect and disconnect socket
+-Server trigger in user side (if you want to trigger server event,so you just file change and save whie you trigger event) 
+-User trigger in server
 # Socket.ioNode
 Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server. It is built on top of the WebSocket protocol and provides additional guarantees like fallback to HTTP long-polling or automatic reconnection
 # Environmental
@@ -139,7 +144,7 @@ http://localhost:8080/
 [https://socket.io/docs/v3/](https://socket.io/docs/v3/)
 
 
+- Output
 
-
-![Screenshot of an output.](https://github.com/chaudharybharat/socket.ioNode/blob/main/output.png)https://github.com/chaudharybharat/socket.ioNode/blob/main/output.png)
+![Screenshot of an output.](https://github.com/chaudharybharat/socket.ioNode/blob/main/output.png)
 
