@@ -1,6 +1,6 @@
-# socket.ioNode
+# Socket.ioNode
 Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server. It is built on top of the WebSocket protocol and provides additional guarantees like fallback to HTTP long-polling or automatic reconnection
-# environmental
+# Environmental
 To get started with developing using the Socket.IO, you need to have Node and npm (node package manager) installed. If you do not have these, head over to Node setup to install node on your local system. Confirm that node and npm are installed by running the following commands in your terminal.
 ```
 node --version
@@ -136,7 +136,7 @@ http://localhost:8080/
   
 ```
 -Io socket official site:
-[a link](https://socket.io/docs/v3/)
+[https://socket.io/docs/v3/](https://socket.io/docs/v3/)
 
 
 
