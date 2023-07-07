@@ -1,7 +1,7 @@
 # This example is ioSocket server and user side
-below trigger event
+Below trigger event
 - User connect and disconnect socket
-- Server trigger in user side (if you want to trigger server event,so you just file change and save whie you trigger event) 
+- Server trigger in user side (if you want to trigger server event,so you just file change main.js(like add white space and save file) and save while you trigger event) 
 - User trigger in server
 # Socket.ioNode
 Socket.IO is a library that enables low-latency, bidirectional and event-based communication between a client and a server. It is built on top of the WebSocket protocol and provides additional guarantees like fallback to HTTP long-polling or automatic reconnection
