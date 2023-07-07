@@ -9,26 +9,73 @@ You should get an output similar to −
 v14.17.0
 
 ```
-** Open your terminal and enter the following in your terminal to create a new folder and enter the following commands − **
+ - Open your terminal and enter the following in your terminal to create a new folder and enter the following commands − **
 
  mkdir socket-project
  cd socket-proect
  npm init -y //this commond create defualt package json file  
 
 	**One final thing is that we should keep restarting the server. When we make changes, we will need a tool called nodemon. To install nodemon, open your terminal and enter the following command**
+
 ```
 npm i express nodemon socket.io
 
 ```
 below change in pacakge json file
 ```
-- ![#f03c15]
+default
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
- `#f03c15`
+ 
+change
+ "scripts": {
+    "start": "nodemon main.js --w"
+  },
 
 ```
-- ![#f03c15] ssh sgshg sghshg  `#f03c15`
+-- create main js file and write below code 
+
+```
+const express=require('express');
+const app =express();
+const path=require('path');
+const http=require('http').Server(app);
+
+const port=process.env.port || 8080;
+
+//attached http server to the socket.io
+const io=require('socket.io')(http);
+
+
+//route
+app.get('/',(req,res)=>{
+    res.sendFile(path.join(__dirname,'src/index.html'))
+ //res.json("get request");
+});
+
+//create a new connection
+io.on('connection',socket=>{
+console.log("A user connected");
+
+socket.on('disconnect',()=>{
+    console.log("A user diconnected");
+})
+socket.on("message",msg=>{
+console.log("Client messaeg:"+msg);
+});
+
+// emit event
+socket.emit("server","Receive From Server")
+socket.emit("server1","Receive From Server second")
+
+});
+
+
+http.listen(port,()=>{
+    console.log('app listeing on port ${port}');
+})
+
+```
 
 
