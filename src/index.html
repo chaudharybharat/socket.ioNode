@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socket IO</title>
+</head>
+<body>
+    <h1>Get response from the server</h1>
+   <button type=""submit" id="submit">Send Message</button>
+    <script src="socket.io/socket.io.js"></script>
+    <script>
+
+        
+        const socket=io();
+
+        socket.on("connect",()=>{
+            console.log(socket.id)
+        })
+        let submit=document.getElementById("submit");
+        submit.addEventListener("click",()=>{
+           socket.emit("message","hey from client"); 
+        });
+
+        socket.on("server",(msg)=>{
+           console.log(msg);
+        })
+
+        //if you want any event listen
+
+        const listener=(eventName,...args)=>{
+            console.log(eventName,args);
+        }
+        socket.onAny(listener);
+    </script>
+</body>
+</html>
