@@ -24,7 +24,6 @@ v14.17.0
 
 ```
 npm i express nodemon socket.io
-
 ```
 below change in pacakge json file
 ```
@@ -132,13 +131,11 @@ create src folder and create there index.html file
   
 ```
 npm start
-
 ```
 - Open browser port 8080 and open console, you can see server event listener in console log
   
 ```
-http://localhost:8080/
-  
+http://localhost:8080/  
 ```
 -Io socket official site:
 [https://socket.io/docs/v3/](https://socket.io/docs/v3/)
