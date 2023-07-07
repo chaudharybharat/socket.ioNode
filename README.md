@@ -78,9 +78,9 @@ http.listen(port,()=>{
 
 ```
 
--- create index html file and write below code(this file is user side) 
+- Create index html file and write below code(this file is user side) 
 create src folder and create there index.html file
-if you useing visual studio code creat html file and -! enter to auto generate html code
+(if you useing visual studio code creat html file and type ! and enter to auto generate html code)
 
 ```
 <!DOCTYPE html>
@@ -111,7 +111,7 @@ if you useing visual studio code creat html file and -! enter to auto generate h
            console.log(msg);
         })
 
-        //if you want any event listen
+        //if you want all emit event listen
 
         const listener=(eventName,...args)=>{
             console.log(eventName,args);
@@ -123,5 +123,15 @@ if you useing visual studio code creat html file and -! enter to auto generate h
 
 
 ```
+- Run command and see in terminal event listener:(user do any action you can see in terminal log)
+  
+```
+npm start
 
-
+```
+- open browser port 8080 and open console, you can see server event listener in console log
+  
+```
+http://localhost:8080/
+  
+```
