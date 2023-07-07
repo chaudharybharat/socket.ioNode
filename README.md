@@ -80,7 +80,7 @@ http.listen(port,()=>{
 
 - Create index html file and write below code(this file is user side) 
 create src folder and create there index.html file
-(if you useing visual studio code creat html file and type ! and enter to auto generate html code)
+(if you useing visual studio code creat html file and type  `!`  and enter to auto generate html code)
 
 ```
 <!DOCTYPE html>
@@ -129,9 +129,17 @@ create src folder and create there index.html file
 npm start
 
 ```
-- open browser port 8080 and open console, you can see server event listener in console log
+- Open browser port 8080 and open console, you can see server event listener in console log
   
 ```
 http://localhost:8080/
   
 ```
+-Io socket official site:
+[a link](https://socket.io/docs/v3/)
+
+
+
+
+![Screenshot of a comment on a GitHub issue showing an image, added in the Markdown, of an Octocat smiling and raising a tentacle.](https://myoctocat.com/assets/images/base-octocat.svg)
+
