@@ -20,7 +20,7 @@ v14.17.0
 npm i express nodemon socket.io
 
 ```
-below change for pacakge json file
+below change in pacakge json file
 ```
 - ![#f03c15]
 "scripts": {
@@ -29,6 +29,6 @@ below change for pacakge json file
  `#f03c15`
 
 ```
-
+- ![#f03c15] ssh sgshg sghshg  `#f03c15`
 
 
